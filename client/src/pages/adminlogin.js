@@ -13,7 +13,7 @@ export default function AdminLogin() {
     setLoading(true);
     axios
       .post(
-        "http://localhost:4000/adminlogin",
+        "https://vercel.com/dhruv-gaurs-projects/quiz-app-g47y/GdA9ExEV3aHKhJH9rnsmQwuCmVME/adminlogin",
         { username: username, password: password },
         { withCredentials: true }
       )

@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:4000/quizes", { withCredentials: true })
+      .get("https://vercel.com/dhruv-gaurs-projects/quiz-app-g47y/GdA9ExEV3aHKhJH9rnsmQwuCmVME/quizes", { withCredentials: true })
       .then((response) => {
         console.log(response.data);
         setquizes(response.data);

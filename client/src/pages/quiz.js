@@ -32,7 +32,7 @@ export default function Quiz() {
 
     const fetchQuiz = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/quiz/${quizId}`);
+        const response = await fetch(`https://vercel.com/dhruv-gaurs-projects/quiz-app-g47y/GdA9ExEV3aHKhJH9rnsmQwuCmVME/quiz/${quizId}`);
         if (!response.ok) {
           throw new Error("Failed to fetch quiz");
         }
@@ -71,7 +71,7 @@ export default function Quiz() {
       console.log(answersArray);
 
       const response = await fetch(
-        `http://localhost:4000/quiz/${quizId}/submit-answers`,
+        `https://vercel.com/dhruv-gaurs-projects/quiz-app-g47y/GdA9ExEV3aHKhJH9rnsmQwuCmVME/quiz/${quizId}/submit-answers`,
         {
           method: "POST",
           headers: {

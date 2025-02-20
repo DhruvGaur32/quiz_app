@@ -40,7 +40,7 @@ export default function Admin() {
     setLoading(true);
     axios
       .post(
-        "http://localhost:4000/addquiz",
+        "https://vercel.com/dhruv-gaurs-projects/quiz-app-g47y/GdA9ExEV3aHKhJH9rnsmQwuCmVME/addquiz",
         {
           quizname,
           quizdesc,
